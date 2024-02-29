@@ -1,45 +1,45 @@
 #!/bin/bash
 
-source requisitos/0.sh
+source requisites/0.sh
 
 Title
-echo "                                [0] ==>Instalar y Configurar Requisitos<== 🔍"
-echo "                                [1] Informacion de una Pagina Web/Empresa  🔍"
-echo "                                [2] Informacion de una Persona             🔍"
-echo "                                [3] Informacion de un Nickname/Alias/Apodo 🔍"
-echo "                                [4] Informacion de una Red Social          🔍"
-echo "                                [5] Informacion de un Email                🔍"
-echo "                                [6] Informacion de un Numero de Telefono   🔍"
-echo "                                [7] Informacion de una IP Publica          🔍"
-echo "                                [8] Informacion de Video/Canal de YouTube  🔍"
-echo "                                [9] Informacion de una Imagen              🔍"
-echo "                                [99] -------------> Salir"" <--------------- 🔍"
+echo "                                [0] ==> Install and Configure Requirements <== 🔍"
+echo "                                [1] Information about a Website/Company     🔍"
+echo "                                [2] Information about a Person               🔍"
+echo "                                [3] Information about a Nickname/Alias       🔍"
+echo "                                [4] Information about a Social Media Profile 🔍"
+echo "                                [5] Information about an Email               🔍"
+echo "                                [6] Information about a Phone Number         🔍"
+echo "                                [7] Information about a Public IP Address    🔍"
+echo "                                [8] Information about a Video/YouTube Channel🔍"
+echo "                                [9] Information about an Image               🔍"
+echo "                                [99] -------------> Exit"" <--------------- 🔍"
 echo
-read -p "[*] Elige una opcion: " opc1
+read -p "[*] Choose an option: " opc1
 	case $opc1 in
-			0 )	bash requisitos/0.sh
+			0 )	bash requisites/0.sh
 				;;
-			1 )	bash requisitos/1.sh
+			1 )	bash requisites/1.sh
 				;;
-			2 )	bash requisitos/2.sh
+			2 )	bash requisites/2.sh
 				;;
-			3 )	bash requisitos/3.sh
+			3 )	bash requisites/3.sh
 				;;
-			4 )	bash requisitos/4.sh
+			4 )	bash requisites/4.sh
 				;;
-			5 )	bash requisitos/5.sh
+			5 )	bash requisites/5.sh
 				;;    
-			6 )	bash requisitos/6.sh
+			6 )	bash requisites/6.sh
 				;;
-			7 )	bash requisitos/7.sh
+			7 )	bash requisites/7.sh
 				;;
-			8 )	bash requisitos/8.sh
+			8 )	bash requisites/8.sh
 				;;
-			9 )	bash requisitos/9.sh
+			9 )	bash requisites/9.sh
 				;;
 			99 )	exit
 				;;
 			* )	echo
-				echo "$RRPLY No es una opcion valida"
+                                echo "$RRPLY is not a valid option"
 				bash the_spy_job.sh
 	esac

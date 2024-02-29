@@ -1,32 +1,32 @@
 #!/bin/bash
-user=`cat requisitos/configuracion/.user_not_root.txt`
+user=`cat requisites/configuracion/.user_not_root.txt`
 
-source requisitos/0.sh
+source requisites/0.sh
 
 Title
-echo "[9] Informacion de una Imagen"
+echo "[9] Image Information"
 echo
 echo "======================================"
-echo "[1] Extraer Metadatos de la Imagen""   |"
+echo "[1] Extract Image Metadata""   |"
 echo "--------------------------------------"
-echo "[2] Busqueda de la Imagen en Google""  |"
+echo "[2] Search Image on Google""  |"
 echo "--------------------------------------"
-echo "[3] Usar Buscador especifico""         |"
+echo "[3] Use Specific Search Engine""         |"
 echo "--------------------------------------"
-echo "[4] Ampliar una Imagen con calidad x4""|"
+echo "[4] Enlarge Image with 4x Quality""|"
 echo "--------------------------------------"
-echo "[5] Todo (Metadatos,Buscadores,Tools)""|"
+echo "[5] All (Metadata, Search Engines, Tools)""|"
 echo "--------------------------------------"
-echo "[6] Volver al Menu""                   |"
+echo "[6] Go Back to Menu""                   |"
 echo "======================================"
 echo
-read -p "Elige una opcion: " opc1
+read -p "Choose an option: " opc1
 	case $opc1 in
 			1 )	echo
-				read -p "[*] Escibe el nombre del archivo con su ruta (/home/kali/Escritorio/Prueba.png): " imagen
+				read -p "[*] Write the name of the file with its path (/home/kali/Desktop/Prueba.png): " imagen
 				echo
 				echo "################################################################"
-				echo "[☢] Imagen: $imagen"
+				echo "[☢] Image: $imagen"
 				echo "################################################################"
 				echo
 				primera=`echo $imagen | head -c 1`
@@ -38,19 +38,19 @@ read -p "Elige una opcion: " opc1
 				sudo exiftool -v -s -G $imagen
 				;;
 			2 )	echo
-				echo "A continuacion cuando se abrira la Pagina Web, deja caer la Imagen y empezara la busqueda"
+				echo "Next, when the web page opens, drop the image and the search will begin"
 				echo
-				echo "Abriendo Navegador...."
+				echo "Opening Browser...."
 				sleep 2
-				su $user -c "firefox 'https://www.google.com/imghp?hl=en&ogbl='"
+				open -a "Firefox" 'https://www.google.com/imghp?hl=en&ogbl='
 				echo
 				;;
 			3 )	echo
-				echo "A continuacion cuando se abrira la Pagina Web, deja caer la Imagen y empezara la busqueda"
+				echo "Next, when the web page opens, drop the image and the search will begin"
 				echo
-				echo "Abriendo Navegador...."
+				echo "Opening Browser...."
 				sleep 2
-				su $user -c "firefox 'https://tineye.com'"
+				su $user -c "Firefox 'https://tineye.com'"
 				echo
 				;;
 			4 )	echo
@@ -58,11 +58,11 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo "Abriendo Navegador...."
 				sleep 2
-				su $user -c "firefox 'https://imgupscaler.com/'"
+				open -a "Firefox 'https://imgupscaler.com/'"
 				echo
 				;;
 			5 )	echo
-				read -p "[*] Escibe el nombre del archivo con su ruta (/home/kali/Escritorio/Prueba.png): " imagen
+				read -p "[*] Write the name of the file with its path (/home/kali/Desktop/Prueba.png): " imagen
 				echo
 				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Extrañendo Metadatos de la Imagen (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
 				echo
@@ -83,43 +83,45 @@ read -p "Elige una opcion: " opc1
 				echo
 				echo
 				echo
-				echo "⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩(x_x) Buscar la Imagen a traves de Google para usar su red neuronal y usar un Buscador especifico (x_x)⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩⇩"
+				echo "Search the Image on Google to use its neural network and use a specific search engine"
 				echo
 				echo "################################################################"
-				echo "[☢] Imagen: $imagen"
+				echo "[☢] Image: $imagen"
 				echo "################################################################"
 				echo
-				echo "A continuacion cuando se abrira la Pagina Web, deja caer la Imagen y empezara la busqueda"
+				echo "Next, when the web page opens, drop the image and the search will begin"
 				echo
-				echo "Abriendo Navegador y Todas las Pestañas...."
+				echo "Opening Browser and All Tabs...."
 				sleep 2
-				su $user -c "firefox 'https://www.google.com/imghp?hl=en&ogbl='" | su $user -c "firefox 'https://tineye.com'" | su $user -c "firefox 'https://imgupscaler.com/'"
+				open -a "Firefox" 'https://www.google.com/imghp?hl=en&ogbl='
+				open -a "Firefox" 'https://tineye.com'
+				open -a "Firefox" 'https://imgupscaler.com/'
 				echo
 				echo "⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧⇧"
 				;;
 			6 )	bash the_spy_job.sh
 				;;
 			* )	echo
-				echo "$RRPLY No es una opcion valida"
+				echo "$RRPLY is not a valid option"
 				sleep 2
-				bash requisitos/9.sh
+				bash requisites/9.sh
 	esac
 echo
 echo
 echo "#####################"
-echo "[1] Volver al Menu"
-echo "[2] Volver a ejecutar"
-echo "[3] Salir"
+echo "[1] Go back to Menu"
+echo "[2] Run again"
+echo "[3] Exit"
 echo "#####################"
 echo
-read -p "Elige una opcion: " opc2
+read -p "Choose an option: " opc2
 	case $opc2 in
 			1 )	bash the_spy_job.sh
 				;;
-			2 )	bash requisitos/9.sh
+			2 )	bash requisites/9.sh
 				;;
 			3 )	exit
 				;;
 			* )	echo
-				echo "$RRPLY No es una opcion valida"
+				echo "$RRPLY is not a valid option"
 	esac
