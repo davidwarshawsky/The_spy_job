@@ -2,7 +2,7 @@
 
 [Español](https://github.com/XDeadHackerX/The_spy_job) | [English](https://github.com/SobrioRiot/The_spy_job)
 
-> Herramienta creada por XDeadHackerX
+> Tool created by XDeadHackerX. Translated by David Warshawsky and in the process of being ported to work for Mac by David Warshawsky. As part of building my cyber capabilities and portfolio, I will be working on translating this to english and making it work on Mac. Potentially even a package for brew.
 
 <p align="center"><img width="120px" alt="Version" src="https://img.shields.io/badge/version-2.1-blue.svg?style=for-the-badge"/></p>
 
@@ -10,100 +10,50 @@
 
 ---
 
-*Buenas, soy* **XDeadHackerX** *y quiero presentaros mi nueva herramienta llamada* **The_Spy´s_Job**. *Esta Tool está enfocado al* **OSINT** *de casi todos los ámbitos* **(Personas, Nicknames, Redes Sociales, Emails, Números de Teléfono, Páginas Webs, IPs Públicas e Imágenes)** *Mi idea era recopilar y automatizar todas las técnicas de OSINT más Avanzadas posibles en una sola Herramienta y así trabajar de la forma más cómoda y rápida posible, ya que solo tenemos que dar un par de clics y él solo se pondrá a recopilar y mostrar de forma ordenada y clasificada toda la Información. Todos los Apartados están separados por partes por si solo quieres extraer un tipo de información en concreto, pero también cuenta con la penúltima opción que combina todas las Opciones para que saque todo lo que sea capaz del dato que le hemos introducido. Deciros que iré actualizando el repositorio, añadiendo cosas nuevas y solucionando errores. Todas las Técnicas de sustracción de datos e información que aparecen en la Herramienta las he ido estudiando y almacenando durante los últimos 5 años.*
+**The_Spy's_Job**. *This tool is focused on* **OSINT** *in almost all areas* **(People, Nicknames, Social Media, Emails, Phone Numbers, Websites, Public IPs, and Images)**. *The ideas was to gather and automate all the most advanced OSINT techniques in a single tool to work in the most comfortable and fast way as possible, as we only have to click a couple of times and it will automatically collect and display all the information in an organized and classified manner. All the sections are separated so that you can extract specific types of information, but it also has the penultimate option that combines all the options to extract everything it can from the given data.*
 <p align="center"> <img width="350px" src="https://i.postimg.cc/258grZf5/world1.webp"></p>
-
-*Os pido por favor que si os ha gustado este gran Proyecto lo apoyéis dándole una* **Estrella** ★, *al final del repositorio también está la opción de invitarme a un café, pero sinceramente me apoyáis más dándole una* **Estrella** ★, *así veré valorado mi esfuerzo en este Proyecto.* **[NO ME HAGO RESPONSABLE DEL MAL USO DE ESTA HERRAMIENTA]**
 
 ---
 
-## 💡 Funciones 💡
+## 💡 Functions 💡
 
-:ballot_box_with_check: **OSINT a Páginas Webs** --> [*WhatWeb, Whois, Scaner de Puertos Avanzado, Información del Servidor, Intentar Extraer IP real de Servidor con CloudFlare, Encriptado SSL, Listar Todas las URLs de un Dominio, Información Web de WordPress, Extraer Trabajadores, Correos Electrónicos y Números de Teléfono, Listar Dominios, Google Dorks, Ping a una Web desde varios Países*]
+:ballot_box_with_check: **OSINT to Websites** --> [*WhatWeb, Whois, Advanced Port Scanner, Server Information, Attempt to Extract Real IP from Server with CloudFlare, SSL Encryption, List All URLs of a Domain, WordPress Web Information, Extract Employees, Emails and Phone Numbers, List Domains, Google Dorks, Ping a Website from Multiple Countries*]
 
-:ballot_box_with_check: **OSINT a Personas** --> [*Google Dorks, Redes Sociales, Imágenes, Posts, etc*]
+:ballot_box_with_check: **OSINT to People** --> [*Google Dorks, Social Networks, Images, Posts, etc*]
 
-:ballot_box_with_check: **OSINT a Nicknames/Alias** --> [*Google Dorks, Buscar en 574 Redes Sociales una cuenta con ese Nick, Imágenes, Posts*]
+:ballot_box_with_check: **OSINT to Nicknames/Aliases** --> [*Google Dorks, Search 574 Social Networks for an Account with that Nick, Images, Posts*]
 
-:ballot_box_with_check: **OSINT a Redes Sociales** --> [*Información de una Cuenta de Instagram/TikTok/Twitter/Twitch/(GitHub + email) = sin tener una cuenta*]
+:ballot_box_with_check: **OSINT to Social Networks** --> [*Information about an Instagram/TikTok/Twitter/Twitch/(GitHub + email) Account = without having an account*]
 
-:ballot_box_with_check: **OSINT a Emails** --> [*Información de un Email, Verificar la existencia de un Email, Buscar en 121 Redes Sociales una cuenta con ese Email, Buscar Cuenta de GitHub enlazada al Email, Google Dorks*]
+:ballot_box_with_check: **OSINT to Emails** --> [*Information about an Email, Verify the existence of an Email, Search 121 Social Networks for an Account with that Email, Search for a GitHub Account linked to the Email, Google Dorks*]
 
-:ballot_box_with_check: **OSINT a Números de Teléfono** --> [*Compañía (ISP), Ver si está registrado en Instagram/Amazon/Snapchat, Google Dorks, Intentar extraer el Nombre del Dueño*]
+:ballot_box_with_check: **OSINT to Phone Numbers** --> [*Company (ISP), Check if it is registered on Instagram/Amazon/Snapchat, Google Dorks, Attempt to extract the Owner's Name*]
 
-:ballot_box_with_check: **OSINT a IPs Públicas** --> [*Compañía (ISP), Geolocalización de la ciudad exacta, Buscar puertos abiertos con sus servicios/versión, Ping de la Web desde varios Países*]
+:ballot_box_with_check: **OSINT to Public IPs** --> [*Company (ISP), Geolocation of the exact city, Search for open ports with their services/version, Ping the Website from Multiple Countries*]
 
-:ballot_box_with_check: **OSINT a Videos/Canales YouTube** --> [**Videos:** *Fecha y Hora de la Publicación, Título, Descripción, URL de la Imagen de la Miniatura (Varios tamaños), Estadísticas (visualizaciones, likes, comentarios y favoritos), Geolocalización (Si la puso), Status, Detalles del Video (Duración, dimensiones, definición, proyección), Categoría del video, Miniaturas.* **Canal:** *Fecha y Hora de la creación del Canal, Título, Descripción, URL de la Imagen de la Miniatura (Varios tamaños), Localización (Si la tiene activada), Estadísticas (Visualizaciones totales de los videos, subscriptores, videos totales), Palabras claves (#), Playlists, Status, Categorías*]
+:ballot_box_with_check: **OSINT to YouTube Videos/Channels** --> [**Videos:** *Publication Date and Time, Title, Description, URL of the Thumbnail Image (Various sizes), Statistics (views, likes, comments, and favorites), Geolocation (if provided), Status, Video Details (Duration, dimensions, definition, projection), Video Category, Thumbnails.* **Channel:** *Creation Date and Time of the Channel, Title, Description, URL of the Thumbnail Image (Various sizes), Location (if enabled), Statistics (Total video views, subscribers, total videos), Keywords (#), Playlists, Status, Categories*]
 
-:ballot_box_with_check: **OSINT a Imágenes** --> [*Metadatos, Motor de Búsqueda de Google, Buscador específico de Imágenes, Ampliar una imagen x4 sin casi perder calidad de la Imagen*]
+:ballot_box_with_check: **OSINT to Images** --> [*Metadata, Google Image Search, Specific Image Search Engine, Enlarge an image x4 with almost no loss of quality*]
 
-## 🛠 Instalar Herramienta 🛠
 
-**0)** Instalar y usar la Herramienta con **Root**
+## 🎲 Considerations 🎲
 
-**1)** sudo apt update && apt -y full-upgrade
+**[1]** In Section ([0] Install and Configure Requirements), when selecting Option 1 to Install the Requirements, it will ask for a user that **does not** have root permissions. This step is very important because if we enter a user with root permissions, or we enter it incorrectly or enter it twice, the options that need to open a browser from the Terminal will not work.
 
-**2)** sudo apt-get install git
+**[2]** In Section ([0] Install and Configure Requirements), you can configure the veriphone.io, shodan.io, and zoomeye.org API to get the most out of this Tool. Both are free.
 
-**3)** git clone https://github.com/XDeadHackerX/The_spy_job.git 
+**[3]** In Section ([7] Public IP Information), when using a VPN, most servers give incorrect responses about their ports. To solve this, I have included several scanners, and 2 of them give you the correct ports despite the VPN.
 
-**4)** cd The_spy_job
+**[4]** Use the tool with Firefox closed, as the tool opens multiple tabs, and if Firefox is already running, an error will occur.
 
-**5)** chmod 777 the_spy_job.sh
+**[5]** I personally recommend using the Tool with the Terminal in Full Screen (Visually more appealing).
 
-**6)** bash the_spy_job.sh
+**[6]** If you have downloaded an older version, I advise you to delete it and reinstall the tool (+requirements) to fix errors and get improvements that make the tool much better than previous versions.
 
-**7)** Marcamos la Opción 0 y luego 1 para instalar las dependencias (Solo marcar la primera vez)
+* I am currently using version 2.1 in order to port it and convert to english using Prompt_Engineering.txt with Github Copilot.  *
+## ⭐☕ Created by XDeadHackerX and davidwarshawsky. ☕⭐
 
-**8)** Dentro de la Opción 0 nos encontramos con los apartados 2 y 3 en los cuales podemos configurar 
-dichas APIs gratuitas para sacar el máximo partido a The_spy_job
-
-**9)** Ya podemos disfrutar de la herramienta
-
-## 🎲 Tener en Cuenta 🎲
-
-**[1]** En el Apartado ([0] Instalar y Configurar Requisitos) cuando le demos a la Opción 1 para Instalar los Requisitos nos pedirá que pongamos a un usuario que **no** tenga permisos root, este paso es muy importante, ya que si ponemos a un usuario con permisos root, o lo escribimos mal o lo ponemos doble no funcionarán las Opciones que tengan que abrir un Navegador desde la Terminal.
-
-**[2]** En el Apartado ([0] Instalar y Configurar Requisitos) podemos Configurar la API de veriphone.io, shodan.io y zoomeye.org para sacar el mejor partido de esta Herramienta, las dos son gratuitas.
-
-**[3]** En el Apartado ([7] Información de una IP Pública) con el uso de VPN la mayoría de servidores dan respuestas erróneas sobre sus puertos. Para solventar esto he puesto varios Scanners y 2 de ellos te dan los puertos correctos a pesar de la VPN.
-
-**[4]** Usar la herramienta con Firefox cerrado, esto se debe a que la herramienta abre múltiples pestañas y si Firefox ya está en ejecución se producir aun error.
-
-**[5]** Personalmente recomiendo usar la Herramienta con la Terminal en Pantalla Completa (Gráficamente más bonito).
-
-**[6]** En caso de que tengas descargada una versión más antigua, te aconsejo borrarla y volver a instalar la herramienta (+requisitos) para solucionar errores y obtener mejoras, que hacen que la herramienta sea mucho mejor que las versiones anteriores.
-
-## 🔎 Versiones 🔎
-
-<details>
-  <summary>[ v1.0 ]</summary>
-  <p align="justify">[#] Versión Original.</p>
-</details>
-<details>
-  <summary>[ v1.1 ]</summary>
-  <p align="justify">[#] Nuevas Opciones en el Apartado [4] llamadas (Información + email de una cuenta de GitHub) y (Información de una cuenta de TikTok), Nueva Opción en el Apartado [1] llamado (Google Dorks), Nuevo Opción en el Apartado [5] Comprobar si tiene GitHub y saber su Username, Reparados los errores de los Apartados 6 y 7, solucionado el Bug al abrir un navegador en el SO Parrot, eliminación de que era la Opción 2 dentro del Apartado 4.</p>
-</details>
-<details>
-  <summary>[ v1.2 ]</summary>
-  <p align="justify">[#] Ampliación de Google Dorks en los Apartados 1, 2 y 6. 1=(Nueva búsqueda, filtra las URLs y fotos de toda la Web), en el Apartado 2 (Permite añadir una palabra clave a la búsqueda para hacerla más avanzada y específica) y por último en el Apartado 6 (También permite añadir una palabra clave a la búsqueda para hacerla más avanzada y específica), Reparación de error que afectaba a la penúltima Opción (Todas las opciones/Todo) de Todos los Apartados el cual cuando lanzaba un Navegador la Herramienta se paraba y no seguía hasta que cerrabas el Navegador.</p>
-</details>
-<details>
-  <summary>[ v1.3 ]</summary>
-  <p align="justify">[#] Incorporación del famoso Motor de Búsqueda Zoomeye (API) en el Apartado [1] la Opción [3] y en el Apartado [7] la Opción [3], Nuevo Opción en el Apartado [8] llamada [3] Usar Buscador específico, el cual usa un Motor de Búsqueda específico de imágenes, Mejoras visuales, Reparaciones varias.</p>
-</details>
-<details>
-  <summary>[ v2.0 ]</summary>
-  <p align="justify">[#] Nueva Opción en el Apartado 5 llamado ([1] Información de un Email) este nos mostrará información muy interesante, Mejora en el Apartado 4 Opción ([2] Información de una cuenta de Instagram) ahora puedes ver la foto de perfil de una cuenta aunque sea privada, Mejoras en el apartado [4] Información de una Red Social, ahora aparte de abrir la web con información avanzada sobre esa cuenta te muestra el 95% de la información también por Terminal, te mostrara el Nombre (Si lo tiene), el número de Posts, número de publicaciones, seguidores y seguidos, y un link para descargar la Imagen de Perfil, también se a incorpororado la Red Social Telegram, Nueva opción en el Apartado 8 llamado [4] Ampliar una Imagen con calidad, logra ampliar la imagen x4 sin perder apenas calidad, Reparado error que había al abrir dos navegadores dentro de una opción, Mejora visual en el Apartado 6 la opción ([1] Ver la Compañía y el País del Número de Teléfono).</p>
-</details>
-<details>
-  <summary>[ v2.1 ]</summary>
-  <p align="justify">[#] Nuevo Apartado llamado ([8] Información de un Video/Canal de YouTube) este nuevo apartado es capaz de extraer mucha información interesante de un Video o Canal de YouTube, como puede ser (Videos: Fecha y Hora de la Publicación, Título, Descripción, URL de la Imagen de la Miniatura (Varios tamaños), Estadísticas (visualizaciones, likes, comentarios y favoritos), Geolocalización (Si la puso), Status, Detalles del Video (Duración, dimensiones, definición, proyección), Categoría del video, Miniaturas. Canal: Fecha y Hora de la creación del Canal, Título, Descripción, URL de la Imagen de la Miniatura (Varios tamaños), Localización (Si la tiene activada), Estadísticas (Visualizaciones totales de los videos, subscriptores, videos totales), Palabras claves (#), Playlists, Status, Categorías*), dentro de este apartado también te da la posibilidad de Generar Estadísticas de un Video o un Canal. La mejor parte de este nuevo apartado es que no requiere de una API de YouTube, la parte negativa es que todos estos resultados se tiene que visualizar en un navegador y no por Terminal, a pesar de esto seguiré estudiando la forma de mostrar los resultados por Terminal al igual que en el Apartado 4. En el apartado 4 ahora tambien extrae informacion de las cuentas privadas de Instagram y Twitter, convirtiendose en la primera herramienta gratuita en GitHub en poder extraer esta informacion sin necesidad de API ni cuenta. Limpieza en los resultados de los Apartados 1, 4, 6, se eliminan los caracteres especiales que rodeaban los resultados de dichos apartados. Optimización del código.</p>
-</details>
-
-## ⭐☕ Creado por XDeadHackerX ☕⭐
-
-**Si consideras que este proyecto ha sido útil, te agradecería que me apoyaras dándole una estrella a este repositorio o invitándome a un café.**
+**The below is the spanish creator's buymeacoffee.**
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/XDeadHackerX)
 
