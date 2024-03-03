@@ -53,8 +53,6 @@
 * I am currently using version 2.1 in order to port it and convert to english using Prompt_Engineering.txt with Github Copilot.  *
 ## ⭐☕ Created by XDeadHackerX and davidwarshawsky. ☕⭐
 
-**The below is the spanish creator's buymeacoffee.**
 
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/XDeadHackerX)
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/davidwarshawsky)
 
-Copyright © 2023, XDeadHackerX
